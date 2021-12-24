@@ -2288,12 +2288,15 @@ html {
     .page__row--contacts {
       padding-bottom: 25%; } }
 
+.section--contacts {
+  padding-top: 5.4375rem; }
+
 .contacts {
   text-align: center;
   position: relative;
   z-index: 1; }
   .contacts__decoration {
-    margin-bottom: 1.375rem; }
+    margin-bottom: 3.6875rem; }
   .contacts__questions {
     font-size: 1.875rem;
     line-height: 1.1;
