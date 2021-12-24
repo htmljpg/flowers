@@ -14,10 +14,7 @@
   --color-wattle: #C5DA41;
   --color-verdun-green: #556200;
   --color-logan: #9C9CC4;
-  --color-manatee: #8D8D9A;
-  --burger-width: 40px;
-  --burger-height: 40px;
-  --burger-line-height: 1px; }
+  --color-manatee: #8D8D9A; }
 
 .custom-checkbox__field:checked + .custom-checkbox__content::after {
   opacity: 1; }

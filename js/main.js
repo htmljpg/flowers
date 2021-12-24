@@ -184,17 +184,24 @@ window.addEventListener('load', function () {
 var showAllBtn = Array.from(document.querySelectorAll('.show-all-btn')),
     bricks = document.getElementById('bricks'),
     bricksHeight = bricks.scrollHeight;
-showAllBtn.forEach(function (item) {
-  item.addEventListener('click', function () {
-    item.classList.add('hide');
-    item.closest('.show-all').classList.add('hide');
-    bricks.style.maxHeight = bricksHeight + 'px';
-    bricks.classList.add('show');
-    setTimeout(function () {
-      bricks.classList.add('overflow');
-    }, 1000);
+
+function bindShowAllBtn() {
+  showAllBtn.forEach(function (item) {
+    item.addEventListener('click', function () {
+      item.classList.add('hide');
+      item.closest('.show-all').classList.add('hide');
+      bricks.style.maxHeight = bricksHeight + 'px';
+      bricks.classList.add('show');
+      setTimeout(function () {
+        bricks.classList.add('overflow');
+      }, 1000);
+    });
   });
-});
+}
+
+;
+bindShowAllBtn();
+window.addEventListener('resize', bindShowAllBtn);
 var burger = document.querySelector('.burger'),
     nav = document.querySelector('.header__cell--nav');
 burger.addEventListener('click', function () {
