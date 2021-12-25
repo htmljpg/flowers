@@ -2212,6 +2212,9 @@ html {
 [class*="balloon__close-button"] {
   opacity: 1; }
 
+.ymaps-2-1-79-balloon__layout {
+  transform: translate(-80px, -25px); }
+
 .ymaps-2-1-79-balloon__close + .ymaps-2-1-79-balloon__content {
   margin-right: 0 !important;
   padding: 0 !important;
@@ -2243,8 +2246,7 @@ html {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  transform: translate(-80px, -25px); }
+  align-items: center; }
 
 .balloon__bg {
   background: transparent url(../img/pin-bg.svg);
