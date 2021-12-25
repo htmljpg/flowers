@@ -2190,10 +2190,10 @@ html {
   letter-spacing: -.008em; }
 
 .page__row--map {
-  height: 39.4375rem;
+  height: 631px;
   position: relative;
   z-index: 1;
-  padding-top: 4.125rem; }
+  padding-top: 66px; }
 
 .ymap {
   position: absolute;
@@ -2238,8 +2238,8 @@ html {
   text-align: center;
   position: relative;
   z-index: 1;
-  width: 16.8125rem;
-  height: 11.5rem;
+  width: 269px;
+  height: 184px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -2247,31 +2247,31 @@ html {
 
 .balloon__bg {
   background: transparent url(../img/pin-bg.svg);
-  height: 20rem;
-  width: 25.3125rem;
+  height: 320px;
+  width: 405px;
   display: block;
   position: absolute;
-  left: -4.25rem;
-  top: -2.4375rem;
+  left: -68px;
+  top: -39px;
   z-index: -1;
   pointer-events: none;
   background-size: cover; }
 
 .balloon__address {
-  font-size: 1.25rem;
+  font-size: 20px;
   line-height: 1.4; }
 
 .balloon__contacts {
-  padding-bottom: 0.6875rem; }
+  padding-bottom: 11px; }
 
 .balloon__text {
-  font-size: 0.875rem;
+  font-size: 14px;
   line-height: 1.3;
   color: var(--color-storm-gray);
-  margin-bottom: 0.5rem; }
+  margin-bottom: 8px; }
 
 .balloon__tel {
-  font-size: 1.25rem;
+  font-size: 20px;
   display: inline-block;
   vertical-align: middle;
   line-height: 1.5; }
