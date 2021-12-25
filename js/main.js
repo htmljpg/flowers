@@ -225,7 +225,7 @@ function init() {
     iconLayout: 'default#image',
     iconImageHref: 'img/pin.svg',
     iconImageSize: [119, 140],
-    iconImageOffset: [20, -100],
+    iconImageOffset: [-58, -121],
     balloonPane: 'outerBalloon'
   });
   var placemark2 = new ymaps.Placemark([54.60832157008337, 53.69510749999997], {
@@ -234,7 +234,7 @@ function init() {
     iconLayout: 'default#image',
     iconImageHref: 'img/pin.svg',
     iconImageSize: [119, 140],
-    iconImageOffset: [20, -100],
+    iconImageOffset: [-58, -121],
     balloonPane: 'outerBalloon'
   });
   var placemark3 = new ymaps.Placemark([54.600441570063055, 53.68199199999996], {
@@ -243,7 +243,7 @@ function init() {
     iconLayout: 'default#image',
     iconImageHref: 'img/pin.svg',
     iconImageSize: [119, 140],
-    iconImageOffset: [20, -100],
+    iconImageOffset: [-58, -121],
     balloonPane: 'outerBalloon'
   });
   var placemark4 = new ymaps.Placemark([54.61008907005848, 53.70166499999991], {
@@ -252,7 +252,7 @@ function init() {
     iconLayout: 'default#image',
     iconImageHref: 'img/pin.svg',
     iconImageSize: [119, 140],
-    iconImageOffset: [20, -100],
+    iconImageOffset: [-58, -121],
     balloonPane: 'outerBalloon'
   });
   var placemark5 = new ymaps.Placemark([54.59618057005217, 53.68788499999998], {
@@ -261,7 +261,7 @@ function init() {
     iconLayout: 'default#image',
     iconImageHref: 'img/pin.svg',
     iconImageSize: [119, 140],
-    iconImageOffset: [20, -100],
+    iconImageOffset: [-58, -121],
     balloonPane: 'outerBalloon'
   });
   var placemark6 = new ymaps.Placemark([54.60056650434561, 53.702402], {
@@ -270,7 +270,7 @@ function init() {
     iconLayout: 'default#image',
     iconImageHref: 'img/pin.svg',
     iconImageSize: [119, 140],
-    iconImageOffset: [20, -100],
+    iconImageOffset: [-58, -121],
     balloonPane: 'outerBalloon'
   });
   var placemark7 = new ymaps.Placemark([54.59666057005338, 53.71478949999989], {
@@ -279,7 +279,7 @@ function init() {
     iconLayout: 'default#image',
     iconImageHref: 'img/pin.svg',
     iconImageSize: [119, 140],
-    iconImageOffset: [20, -100],
+    iconImageOffset: [-58, -121],
     balloonPane: 'outerBalloon'
   });
   map.controls.remove('geolocationControl'); // удаляем геолокацию

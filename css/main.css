@@ -2243,7 +2243,8 @@ html {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  transform: translate(-80px, -25px); }
 
 .balloon__bg {
   background: transparent url(../img/pin-bg.svg);
