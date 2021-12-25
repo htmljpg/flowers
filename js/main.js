@@ -202,12 +202,12 @@ burger.addEventListener('click', function () {
   nav.classList.toggle('active');
 }); // map
 
-var center = [48.8866527839977, 2.34310679732974];
+var center = [54.60568307004713, 53.705231499999904];
 
 function init() {
   var map = new ymaps.Map('map', {
     center: center,
-    zoom: 17
+    zoom: 14
   });
   var placemark = new ymaps.Placemark(center, {
     balloonContentHeader: 'Хедер балуна',
@@ -219,13 +219,68 @@ function init() {
     iconImageSize: [119, 140],
     iconImageOffset: [0, 0]
   });
-  var placemark1 = new ymaps.Placemark(center, {
-    balloonContent: "\n\n\t\t\t<div class=\"balloon\">\n                <span class=\"balloon__bg\"></span>\n\t\t\t\t<div class=\"balloon__address medium\">\u0423\u043B\u0438\u0446\u0430 \u041B\u0435\u043D\u0438\u043D\u0430, 5/4</div>\n\t\t\t\t<div class=\"balloon__contacts\">\n                    <div class=\"balloon__text light\">\u0420\u0430\u0431\u043E\u0442\u0430\u0435\u043C \u043A\u0440\u0443\u0433\u043B\u043E\u0441\u0443\u0442\u043E\u0447\u043D\u043E</div>\n\t\t\t\t\t<a href=\"tel:+88007750775\" class=\"balloon__tel noto-serif-display bold\">8 800 775-07-75</a>\n\t\t\t\t</div>\n\t\t\t</div>\n\n\t\t"
+  var placemark1 = new ymaps.Placemark([54.60568307004713, 53.705231499999904], {
+    balloonContent: "\n\n\t\t\t<div class=\"balloon\">\n                <span class=\"balloon__bg\"></span>\n\t\t\t\t<div class=\"balloon__address medium\">\u043F\u0440.\u041B\u0435\u043D\u0438\u043D\u0430 2 \u043E\u0444\u0438\u0441 7</div>\n\t\t\t\t<div class=\"balloon__contacts\">\n                    <div class=\"balloon__text light\">\u0420\u0430\u0431\u043E\u0442\u0430\u0435\u043C \u043A\u0440\u0443\u0433\u043B\u043E\u0441\u0443\u0442\u043E\u0447\u043D\u043E</div>\n\t\t\t\t\t<a href=\"tel:+88007750775\" class=\"balloon__tel noto-serif-display bold\">8 800 775-07-75</a>\n\t\t\t\t</div>\n\t\t\t</div>\n\n\t\t"
   }, {
     iconLayout: 'default#image',
     iconImageHref: 'img/pin.svg',
     iconImageSize: [119, 140],
-    iconImageOffset: [15, -100]
+    iconImageOffset: [20, -100],
+    balloonPane: 'outerBalloon'
+  });
+  var placemark2 = new ymaps.Placemark([54.60832157008337, 53.69510749999997], {
+    balloonContent: "\n\n\t\t\t<div class=\"balloon\">\n                <span class=\"balloon__bg\"></span>\n\t\t\t\t<div class=\"balloon__address medium\">\u041E\u0441\u0442\u0440\u043E\u0432\u0441\u043A\u043E\u0433\u043E 14</div>\n\t\t\t\t<div class=\"balloon__contacts\">\n                    <div class=\"balloon__text light\">\u0420\u0430\u0431\u043E\u0442\u0430\u0435\u043C \u043A\u0440\u0443\u0433\u043B\u043E\u0441\u0443\u0442\u043E\u0447\u043D\u043E</div>\n\t\t\t\t\t<a href=\"tel:+88007750775\" class=\"balloon__tel noto-serif-display bold\">8 800 775-07-75</a>\n\t\t\t\t</div>\n\t\t\t</div>\n\n\t\t"
+  }, {
+    iconLayout: 'default#image',
+    iconImageHref: 'img/pin.svg',
+    iconImageSize: [119, 140],
+    iconImageOffset: [20, -100],
+    balloonPane: 'outerBalloon'
+  });
+  var placemark3 = new ymaps.Placemark([54.600441570063055, 53.68199199999996], {
+    balloonContent: "\n\n\t\t\t<div class=\"balloon\">\n                <span class=\"balloon__bg\"></span>\n\t\t\t\t<div class=\"balloon__address medium\">\u041E\u0441\u0442\u0440\u043E\u0432\u0441\u043A\u043E\u0433\u043E 47<br> (\u043E\u0441\u0442\u0430\u043D\u043E\u0432\u043A\u0430 \u0420\u0443\u0444\u0430)</div>\n\t\t\t\t<div class=\"balloon__contacts\">\n                    <div class=\"balloon__text light\">\u0420\u0430\u0431\u043E\u0442\u0430\u0435\u043C \u043A\u0440\u0443\u0433\u043B\u043E\u0441\u0443\u0442\u043E\u0447\u043D\u043E</div>\n\t\t\t\t\t<a href=\"tel:+88007750775\" class=\"balloon__tel noto-serif-display bold\">8 800 775-07-75</a>\n\t\t\t\t</div>\n\t\t\t</div>\n\n\t\t"
+  }, {
+    iconLayout: 'default#image',
+    iconImageHref: 'img/pin.svg',
+    iconImageSize: [119, 140],
+    iconImageOffset: [20, -100],
+    balloonPane: 'outerBalloon'
+  });
+  var placemark4 = new ymaps.Placemark([54.61008907005848, 53.70166499999991], {
+    balloonContent: "\n\n\t\t\t<div class=\"balloon\">\n                <span class=\"balloon__bg\"></span>\n\t\t\t\t<div class=\"balloon__address medium\">70-\u043B\u0435\u0442 \u041E\u043A\u0442\u044F\u0431\u0440\u044F 13<br> (\u043E\u0441\u0442\u0430\u043D\u043E\u0432\u043A\u0430 \u0428\u0430\u043D\u0441)</div>\n\t\t\t\t<div class=\"balloon__contacts\">\n                    <div class=\"balloon__text light\">\u0420\u0430\u0431\u043E\u0442\u0430\u0435\u043C \u043A\u0440\u0443\u0433\u043B\u043E\u0441\u0443\u0442\u043E\u0447\u043D\u043E</div>\n\t\t\t\t\t<a href=\"tel:+88007750775\" class=\"balloon__tel noto-serif-display bold\">8 800 775-07-75</a>\n\t\t\t\t</div>\n\t\t\t</div>\n\n\t\t"
+  }, {
+    iconLayout: 'default#image',
+    iconImageHref: 'img/pin.svg',
+    iconImageSize: [119, 140],
+    iconImageOffset: [20, -100],
+    balloonPane: 'outerBalloon'
+  });
+  var placemark5 = new ymaps.Placemark([54.59618057005217, 53.68788499999998], {
+    balloonContent: "\n\n\t\t\t<div class=\"balloon\">\n                <span class=\"balloon__bg\"></span>\n\t\t\t\t<div class=\"balloon__address medium\">\u0427\u0435\u0445\u043E\u0432\u0430 4\u0430<br> (\u043E\u0441\u0442\u0430\u043D\u043E\u0432\u043A\u0430 \u0411\u0435\u0440\u0435\u0437\u043A\u0430)</div>\n\t\t\t\t<div class=\"balloon__contacts\">\n                    <div class=\"balloon__text light\">\u0420\u0430\u0431\u043E\u0442\u0430\u0435\u043C \u043A\u0440\u0443\u0433\u043B\u043E\u0441\u0443\u0442\u043E\u0447\u043D\u043E</div>\n\t\t\t\t\t<a href=\"tel:+88007750775\" class=\"balloon__tel noto-serif-display bold\">8 800 775-07-75</a>\n\t\t\t\t</div>\n\t\t\t</div>\n\n\t\t"
+  }, {
+    iconLayout: 'default#image',
+    iconImageHref: 'img/pin.svg',
+    iconImageSize: [119, 140],
+    iconImageOffset: [20, -100],
+    balloonPane: 'outerBalloon'
+  });
+  var placemark6 = new ymaps.Placemark([54.60056650434561, 53.702402], {
+    balloonContent: "\n\n\t\t\t<div class=\"balloon\">\n                <span class=\"balloon__bg\"></span>\n\t\t\t\t<div class=\"balloon__address medium\">\u041A\u043E\u043C\u0430\u0440\u043E\u0432\u0430 23/1</div>\n\t\t\t\t<div class=\"balloon__contacts\">\n                    <div class=\"balloon__text light\">\u0420\u0430\u0431\u043E\u0442\u0430\u0435\u043C \u043A\u0440\u0443\u0433\u043B\u043E\u0441\u0443\u0442\u043E\u0447\u043D\u043E</div>\n\t\t\t\t\t<a href=\"tel:+88007750775\" class=\"balloon__tel noto-serif-display bold\">8 800 775-07-75</a>\n\t\t\t\t</div>\n\t\t\t</div>\n\n\t\t"
+  }, {
+    iconLayout: 'default#image',
+    iconImageHref: 'img/pin.svg',
+    iconImageSize: [119, 140],
+    iconImageOffset: [20, -100],
+    balloonPane: 'outerBalloon'
+  });
+  var placemark7 = new ymaps.Placemark([54.59666057005338, 53.71478949999989], {
+    balloonContent: "\n\n\t\t\t<div class=\"balloon\">\n                <span class=\"balloon__bg\"></span>\n\t\t\t\t<div class=\"balloon__address medium\">\u041A\u043E\u043C\u0430\u0440\u043E\u0432\u0430 38 - <br> \u0426\u0432\u0435\u0442\u043E\u0447\u043D\u044B\u0439 \u0441\u043A\u043B\u0430\u0434</div>\n\t\t\t\t<div class=\"balloon__contacts\">\n                    <div class=\"balloon__text light\">\u0420\u0430\u0431\u043E\u0442\u0430\u0435\u043C \u043A\u0440\u0443\u0433\u043B\u043E\u0441\u0443\u0442\u043E\u0447\u043D\u043E</div>\n\t\t\t\t\t<a href=\"tel:+88007750775\" class=\"balloon__tel noto-serif-display bold\">8 800 775-07-75</a>\n\t\t\t\t</div>\n\t\t\t</div>\n\n\t\t"
+  }, {
+    iconLayout: 'default#image',
+    iconImageHref: 'img/pin.svg',
+    iconImageSize: [119, 140],
+    iconImageOffset: [20, -100],
+    balloonPane: 'outerBalloon'
   });
   map.controls.remove('geolocationControl'); // удаляем геолокацию
 
@@ -245,6 +300,12 @@ function init() {
   // map.geoObjects.add(placemark);
 
   map.geoObjects.add(placemark1);
+  map.geoObjects.add(placemark2);
+  map.geoObjects.add(placemark3);
+  map.geoObjects.add(placemark4);
+  map.geoObjects.add(placemark5);
+  map.geoObjects.add(placemark6);
+  map.geoObjects.add(placemark7);
 }
 
 ymaps.ready(init);

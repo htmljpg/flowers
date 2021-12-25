@@ -1859,7 +1859,6 @@ html {
 
 .burger {
   height: 38px;
-  width: 38px;
   /*-----set icon size */
   display: flex;
   align-items: center;
@@ -2029,8 +2028,6 @@ html {
   .bouquet:hover .bouquet__inner {
     bottom: auto; }
   .bouquet__image {
-    display: block;
-    overflow: hidden;
     padding-bottom: 100%;
     border-radius: 36px; }
   .bouquet__body {
@@ -2047,7 +2044,6 @@ html {
   .bouquet__price {
     margin: 0 0 0.9375rem;
     font-size: 1.625rem; }
-<<<<<<< HEAD
   @media (min-width: 992px) {
     .bouquet__hidden {
       visibility: hidden;
@@ -2063,22 +2059,6 @@ html {
       z-index: 200;
       max-height: 500px;
       transition: visibility .3s ease-in-out, opacity .3s ease-in-out, z-index .3s ease-in-out, max-height .3s ease-in-out; } }
-=======
-  .bouquet__hidden {
-    visibility: hidden;
-    opacity: 0;
-    z-index: -1;
-    max-height: 0;
-    overflow: hidden; }
-  .bouquet__inner:hover .bouquet__hidden {
-    visibility: visible;
-    overflow: visible;
-    opacity: 1;
-    z-index: 200;
-    max-height: 500px;
-    transition: visibility .3s ease-in-out, opacity .3s ease-in-out, z-index .3s ease-in-out,
- max-height .3s ease-in-out; }
->>>>>>> 3ed0ce4a95b3e1f612d0a38ce8c7101ca631119d
   .bouquet__button {
     padding-bottom: 0.5rem; }
 
@@ -2215,7 +2195,7 @@ html {
   z-index: 1;
   padding-top: 4.125rem; }
 
-.map {
+.ymap {
   position: absolute;
   left: 0;
   top: 0;
