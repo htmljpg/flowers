@@ -1,0 +1,39 @@
+.section--advantages {
+    padding-bottom: toRem(110);
+}
+
+.advantages {
+    padding-top: toRem(35);
+    &__item {
+        padding-bottom: toRem(40);
+    }
+    
+    &__block {
+        text-align: center;
+        @include lg-min {
+            max-width: 366px;
+        }
+    }
+
+    &__icon {
+        display: block;
+        height: toRem(80);
+        text-align: center;
+        margin-bottom: toRem(25);
+    }
+
+    &__title {
+        margin: 0;
+        font-size: toRem(22);
+        line-height: 1.4;
+        margin-bottom: 7px;
+    }
+
+    &__desc {
+        margin: 0;
+        color: var(--color-comet);
+        font-size: toRem(18);
+        line-height: 1.4;
+        letter-spacing: -.02em;
+    }
+}

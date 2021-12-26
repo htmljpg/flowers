@@ -1,0 +1,79 @@
+.page__row--intro {
+    position: relative;
+    z-index: 10;
+}
+
+.intro {
+    position: relative;
+    z-index: 1;
+    padding-top: toRem(200);
+    padding-bottom: toRem(49);
+
+    @include lg-max {
+        padding-top: toRem(130);
+    }
+
+    &__content {
+        max-width: 800px;
+        position: relative;
+        z-index: 1;
+    }
+
+    &__title {
+        margin: 0 0 toRem(28);
+    }
+
+    &__desc {
+        font-size: toRem(24);
+        line-height: 1.5;
+        letter-spacing: -.017em;
+        margin-bottom: toRem(30);
+        @include md-max {
+            font-size: toRem(20);
+        }
+    }
+
+    &__link {
+        background: url(../img/arrow-bottom.svg) no-repeat top left;
+        padding-left: toRem(51);
+        vertical-align: baseline;
+        min-height: toRem(40);
+        font-size: toRem(22);
+        color: var(--color-violet-red-2);
+        padding-bottom: 2px;
+        background-size: toRem(40) toRem(40);
+    }
+
+    &__bouquet {
+        position: absolute;
+        right: -673px;
+        top: -164px;
+        z-index: 100;
+        max-width: none;
+    }
+
+    &__picture {
+        height: toRem(173);
+        width: toRem(173);
+        position: absolute;
+        right: toRem(-23);
+        bottom: toRem(-67);
+        z-index: 200;
+        box-shadow: -12px -12px 66px var(--color-pink-salmon);
+        border-radius: 50%;
+        @include md-max {
+            height: toRem(133);
+            width: toRem(133);
+        }
+    }
+
+    &__flower {
+        position: absolute;
+        left: -321px;
+        top: 341px;
+        z-index: 100;
+        @include md-max {
+            display: none;
+        }
+    }
+}

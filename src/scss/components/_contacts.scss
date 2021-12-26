@@ -1,0 +1,64 @@
+.page__row--contacts {
+    position: relative;
+    z-index: 1;
+    background: url(../img/contacts-bg.png) no-repeat calc(50% + 108px) bottom;
+    padding-bottom: 475px;
+    @include xl-max {
+        background-size: contain;
+        padding-bottom: 37%;
+    }
+    @include sm-max {
+        padding-bottom: 25%;
+    }
+}
+
+.section--contacts {
+    padding-top: toRem(87);
+}
+
+.contacts {
+    text-align: center;
+    position: relative;
+    z-index: 1;
+
+    &__decoration {
+        margin-bottom: toRem(59);
+    }
+
+    &__questions {
+        font-size: toRem(30);
+        line-height: 1.1;
+        margin-bottom: toRem(28);
+        @include sm-max {
+            font-size: toRem(20);
+        }
+    }
+
+    &__tel {
+        font-size: toRem(110);
+        line-height: .94545;
+
+        &:hover {
+            color: var(--color-pink-salmon);
+        }
+
+        @include xl-max {
+            font-size: toRem(80);
+        }
+        @include lg-max {
+            font-size: toRem(60);
+            display: inline-block;
+        }
+        @include md-max {
+            font-size: toRem(40);
+            vertical-align: middle;
+            margin-bottom: toRem(15);
+        }
+    }
+
+    &__text {
+        color: var(--color-manatee);
+        margin: 0;
+        font-size: toRem(22);
+    }
+}

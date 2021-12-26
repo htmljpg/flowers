@@ -1,0 +1,19 @@
+.page__row--about {
+    @include lg-max {
+        background-image: none!important;
+    }
+}
+
+.section--about {
+    padding: toRem(86) 0 0;
+}
+
+.about {
+    &-picture {
+        position: absolute;
+        left: toRem(536);
+        bottom: 0;
+        z-index: -1;
+        max-width: none;
+    }
+}

@@ -1,0 +1,92 @@
+.page__row--header {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+}
+.header {
+  padding-top: toRem(34);
+  position: relative;
+  z-index: 1;
+
+  &__cell--logo {
+    @include lg-min {
+      margin-right: toRem(67);
+    }
+  }
+
+  &__cell--nav {
+    @include lg-max {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      z-index: 1;
+      background-color: var(--color-white);
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      overflow: hidden;
+      opacity: 0;
+      visibility: hidden;
+      transition: all .5s ease;
+      z-index: -1;
+      border-radius: 10px;
+      box-shadow: 0px toRem(28) toRem(68) rgba(149, 68, 82, 0.5);
+
+      &.active {
+        opacity: 1;
+        visibility: visible;
+        z-index: 10;
+      }
+    }
+  }
+
+  &__nav-item:not(:last-child) {
+    @include lg-min {
+      margin-right: toRem(38);
+    }
+  }
+  &__nav-link {
+    color: var(--color-burnt-umber);
+    display: block;
+    padding-top: toRem(4);
+    @include lg-max {
+      padding: .5rem 0;
+    }
+  }
+  &__contacts {
+    padding-bottom: toRem(4);
+
+    @include lg-min {
+      text-align: right;
+    }
+
+    &-text {
+      line-height: 1.4;
+      margin: 0;
+    }
+    &-tel {
+      font-size: toRem(24);
+      color: var(--color-haiti);
+    }
+    &-callback {
+      letter-spacing: -.012em;
+      color: var(--color-violet-red);
+    }
+  }
+}
+
+.logo {
+  display: block;
+  @include xl-max {
+    width: 150px;
+  }
+
+  @include lg-max {
+    width: 180px;
+  }
+}
+
+.burger {
+  @include burger;
+}
